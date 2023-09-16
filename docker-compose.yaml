@@ -1,0 +1,13 @@
+version:  "3.8"
+
+services:
+  container_name: "stu-k8s-demo"
+  image: student-kubernetes-demo:latest
+  restart: always
+  ports:
+    - '8088:8088'
+  expose:
+    - '8088'
+networks:
+  plus365-network:
+
